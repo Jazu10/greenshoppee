@@ -79,7 +79,7 @@ function product(props) {
                   ) : (
                      <button
                         disabled
-                        className="w-full button1 mt-4 hover:from-red-600 cursor-not-allowed">
+                        className="w-full button1 mt-4 hover:from-red-600 cursor-not-allowed opacity-50">
                         Buy Now
                      </button>
                   )}

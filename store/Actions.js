@@ -5,7 +5,6 @@ const ACTIONS = {
 };
 
 export const addToCart = (product, cart) => {
-   console.log(cart);
    if (product.inStock === 0)
       return {
          type: "NOTIFY",

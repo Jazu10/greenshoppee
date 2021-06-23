@@ -8,8 +8,8 @@ function Home(props) {
 
    return (
       <div className="bg-gray-100 h-50">
-         <Head>
-            <title>GreenShoppee</title>
+         <Head className="bg-green-500">
+            <title >GreenShoppee</title>
          </Head>
          <main className="max-w-screen-2xl mx-auto">
             <Banner />
