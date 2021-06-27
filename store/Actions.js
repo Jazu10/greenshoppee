@@ -26,6 +26,19 @@ export const addToCart = (product, cart) => {
    };
 };
 
-
+export const decrease = (data, id) => {
+   const newData = [...data];
+   newData.forEach((item) => {
+      if (item._id === id) item.quantity -= 1;
+   });
+   return { type: "TO_CART", payload: newData };
+};
+export const increase = (data, id) => {
+   const newData = [...data];
+   newData.forEach((item) => {
+      if (item._id === id) item.quantity += 1;
+   });
+   return { type: "TO_CART", payload: newData };
+};
 
 export default ACTIONS;

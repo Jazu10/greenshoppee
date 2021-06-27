@@ -1,6 +1,6 @@
 module.exports = {
    images: {
-      domains: ["res.cloudinary.com"],
+      domains: ["res.cloudinary.com", "links.papareact.com"],
    },
    env: {
       BASE_URL: "http://localhost:3000",

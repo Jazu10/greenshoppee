@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 import { useContext, useState } from "react";
 import { DataContext } from "../../store/GlobalState";
 import { addToCart } from "../../store/Actions";
@@ -19,8 +19,8 @@ function Product({ id, title, price, description, category, images, inStock }) {
    };
 
    return (
-      <Bounce bottom>
-         <div className="relative flex flex-col m-5 bg-white z-30 p-10 shadow-sm rounded-md hover:shadow-xl transform transition-transform duration-500 hover:scale-105">
+      // <Bounce bottom>
+         <div className="relative flex flex-col m-5 bg-white z-30 p-10 shadow-sm rounded-md hover:shadow-xl transform duration-500 hover:scale-105">
             <p className="absolute top-2 right-2 text-xs text-gray-400 italic">
                {category}
             </p>
@@ -62,8 +62,45 @@ function Product({ id, title, price, description, category, images, inStock }) {
                )}
             </div>
          </div>
-      </Bounce>
+      // </Bounce>
    );
 }
 
 export default Product;
+
+
+{/* <div className="grid grid-cols-5">
+   <Image src={image} height={200} width={200} objectFit="contain" />
+   <div className="col-span-3 mx-5">
+      <p>{title}</p>
+
+      <div className="flex">
+         {Array(rating)
+            .fill()
+            .map((_, i) => (
+               <StarIcon key={i} className="h-5 text-yellow-500" />
+            ))}
+      </div>
+      <p className="text-xs my-2 line-clamp-3">{description}</p>
+      <Currency quantity={price} currency="INR" />
+      {hasPrime && (
+         <div className="flex items-center space-x-2">
+            <img
+               loading="lazy"
+               className="w-12"
+               src="https://links.papareact.com/fdw"
+               alt=""
+            />
+            <p className="text-xs text-gray-500">Free Next-day Delivery</p>
+         </div>
+      )}
+   </div>
+   <div className="flex flex-col space-y-2 my-auto justify-self-end">
+      <button onClick={addItemToBasket} className="button">
+         Add to Basket
+      </button>
+      <button onClick={removeItemFromBasket} className="button">
+         Remove from Basket
+      </button>
+   </div>
+</div>; */}
