@@ -3,7 +3,7 @@ module.exports = {
       domains: ["res.cloudinary.com", "links.papareact.com"],
    },
    env: {
-      BASE_URL: "http://localhost:3000",
+      BASE_URL: "https://greenshoppee.vercel.app/",
       MONGODB_URL:
          "mongodb+srv://jaseem:jarvis007@cluster0.b5c3h.mongodb.net/greenshoppee?retryWrites=true&w=majority",
       ACCESS_TOKEN_SECRET: "j76jxfmddJ/P:D[ZbhN-)hgG<bQBY,2SNS#7FFGu.<Ud>[':F7",
